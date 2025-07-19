@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>مرحبا بكم في موقعي</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #4b6cb7, #182848);
+      color: white;
+      padding: 1em 2em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1em;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('https://source.unsplash.com/1600x900/?technology') no-repeat center center;
+      background-size: cover;
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      flex-direction: column;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin: 0.2em;
+    }
+
+    .hero p {
+      font-size: 1.5em;
+      max-width: 600px;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    section {
+      padding: 2em;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 1.5em;
+    }
+
+    .feature {
+      background: white;
+      padding: 1.5em;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 260px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .feature:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #182848;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+
+    #whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 50%;
+      font-size: 1.5em;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: background 0.3s;
+      z-index: 9999;
+    }
+
+    #whatsapp-button:hover {
+      background-color: #1ebe57;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>🌟 موقعي</div>
+  <nav>
+    <a href="#features">الميزات</a>
+    <a href="#about">حول</a>
+    <a href="#contact">اتصل بنا</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>مرحباً بك!</h1>
+  <p>هذا الموقع مصمم بلغة HTML و CSS و JavaScript ويحتوي على ميزات رائعة!</p>
+</div>
+
+<section id="features">
+  <h2>✨ الميزات</h2>
+  <div class="features">
+    <div class="feature">
+      <h3>تصميم جميل</h3>
+      <p>واجهة مميزة بألوان هادئة وتأثيرات سلسة.</p>
+    </div>
+    <div class="feature">
+      <h3>زر واتساب</h3>
+      <p>تواصل معنا مباشرة عبر واتساب بزر ثابت أسفل الشاشة.</p>
+    </div>
+    <div class="feature">
+      <h3>متجاوب</h3>
+      <p>يعمل على الهاتف والكمبيوتر بسهولة.</p>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <h2>📘 من نحن</h2>
+  <p>نحن فريق نحب بناء مواقع جذابة وسهلة الاستخدام. هذا مجرد مثال لموقع يمكن تطويره لمتجر، مدونة، معرض أعمال أو أي شيء آخر.</p>
+</section>
+
+<section id="contact">
+  <h2>📞 اتصل بنا</h2>
+  <p>راسلنا عبر البريد أو مباشرة على واتساب من الزر في الأسفل.</p>
+</section>
+
+<footer>
+  &copy; 2025 جميع الحقوق محفوظة | موقعي التجريبي
+</footer>
+
+<!-- زر واتساب -->
+<div id="whatsapp-button" onclick="openWhatsApp()">
+  💬
+</div>
+
+<script>
+  function openWhatsApp() {
+    window.open("https://wa.me/212691031884", "_blank");
+  }
+</script>
+
+</body>
+</html>
